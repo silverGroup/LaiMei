@@ -1,0 +1,307 @@
+.navbar{
+    background-color:#333333 ;
+}
+.navbar-nav > li > a {
+    font-size:16px;
+    padding-top: 28px;
+}
+.navbar-brand{
+    height: auto;
+}
+#fullPage-nav{
+    left:7px;
+    width: 120px;
+}
+#fullPage-nav li .active span, .fullPage-slidesNav .active span {
+    background: #ffffff;
+}
+#fullPage-nav span, .fullPage-slidesNav span{
+    border:1px solid #ffffff;
+    width:10px;
+    height:10px;
+}
+.container{
+    position: relative;
+}
+.section1{
+    background: url(../img/bg.png) 50%;
+}
+.navbar-text {
+    margin-top: 26px;
+}
+/*pc设备*/
+@media screen and (min-width: 992px){
+    .section1{
+        background: url(../img/bg.png) 50%;
+    }
+    .carousel-inner>div.SecondPage.active{
+        left: 60px;
+    }
+    .connactHeader .connactHead {
+        margin-top: 70px;
+    }
+    .conact{
+        margin-top: 40px;
+    }
+    .messageLeft{
+        margin-top: 32px;
+    }
+    .messageRight{
+        margin-top: 40px;
+    }
+    .messageLeft .messageInput{
+        margin-top: 30px;
+    }
+    .messageRight textarea{
+        width:86%;
+    }
+
+}
+/*pad设备*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .section1{
+        background: url(../img/bg.png) 50% 18%;
+    }
+    .maskContainer{
+        margin-top: 116px;
+    }
+    .connactHeader .connactHead {
+        margin-top: 40px;
+    }
+    .conact{
+        margin-top: 20px;
+    }
+    .messageRight textarea{
+        margin-top: 10px;
+        width: 91%;
+        margin-left: -3%;
+    }
+    .section1 .connactHeader {
+        height: 486px;
+    }
+    div.section4 {
+        background: url(../img/about_02.png) 50% 78% no-repeat;
+    }
+}
+/*phone设备*/
+@media screen and (max-width: 767px){
+    .section1{
+        background: url(../img/bg.png) 50% 46%;
+    }
+    .maskContainer{
+        margin-top: 116px;
+    }
+    p.About{
+        font-size: 14px;
+    }
+    .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+        max-height: 614px;
+    }
+    .Intr{
+        display: none;
+        opacity:0;
+    }
+    .messageRight textarea{
+        margin-top: 5px;
+        width: 98%;
+        margin-left: -7%;
+    }
+    div.section4 {
+        background: url(../img/about_02.png)50% 50%;
+    }
+}
+.product{
+    height:158px;
+    background-color: #000;
+    position: relative;
+}
+.imgIntr01{
+    background: url("../img/bgx1_01.png") center;
+}
+.row{
+    margin-top: 10px;
+}
+.intr{
+    height: 36px;
+    border: 1px solid #fff;
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    line-height: 36px;
+    transition: all 0.3s linear;
+}
+.intr:hover{
+    transform: scale(1.1,1.1);
+}
+.intr a{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.imgIntr02{
+    background: url("../img/imgx_02.png") center;
+}
+.imgIntr03{
+    background: url("../img/imgx_03.png") center;
+}
+.imgIntr04{
+    background: url("../img/imgx_04.png") center;
+}
+.imgIntr05{
+    background: url("../img/imgx_05.png") center;
+}
+.imgIntr06{
+    background: url("../img/imgx_06.png") center;
+}
+.xianTiao{
+    height:20%;
+    border-bottom: 2px solid #fff;
+    border-radius:5% ;
+    margin-left: 50px;
+}
+.xianTiao>ul{
+    position: relative;
+}
+.xianTiao>ul>li{
+    border-radius:50%;
+    background-color: #fff;
+    bottom: -16px;
+    width: 8px;
+    height: 8px;
+}
+.xianTiao>ul>li>a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: -10px;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.3s linear;
+}
+.homePage{
+    width: 50px;
+    height:50px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-top:-20px;
+}
+.homePage:hover{
+    background-color:#F4E5CF;
+    transform: scale(1.1,1.1);
+}
+.xianTiao>ul>li>a:hover{
+    transform: scale(1.1,1.1);
+}
+.iconNext{
+    position: absolute;
+    bottom:-14%;
+    left:50%;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+    border:2px solid #fff ;
+    text-align: center;
+    line-height: 54px;
+}
+.iconNext>span{
+    color: #fff;
+    font-size: 24px;
+}
+.section3{
+    background: url("../img/bg03.png") center;
+}
+.IntrParent{
+    position: relative;
+}
+.Intr{
+    position: absolute;
+    color: #e3e3e3;
+    width: 160px;
+    height: auto;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 52%;
+    font-size: 16px;
+    display: none;
+}
+
+.Intr:hover{
+    color: #fff;
+    opacity:1;
+    text-decoration: none;
+}
+.section4{
+    background: url("../img/about_02.png");
+}
+.section4 .header{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+.About{
+    color:#ffffff;
+    font-size:18px;
+}
+.connactHeader{
+    color:#B0B0B0;
+    height:440px;
+    background: rgba(110,109,110,.4);
+}
+.connactHeader .connactHead{
+    text-align: center
+}
+.connactHeader .connactHead h2, .messageHead h2{
+    font-weight:bold;
+}
+.connactHeader .connactHead p,.messageHead h2 p{
+    font-size: 18px;
+    color: #f5f5f5;
+}
+.conact{
+    color: #f5f5f5;
+    text-align: center;
+}
+.messageHead{
+    text-align: center
+}
+.messageLeft input{
+    width: 86%;
+    border: none;
+    height:30px;
+}
+.connactHead button{
+    width:20%;
+    height: 40px;
+    border: none;
+    background: rgba(0,0,0,.6);
+    color:#e3e3e3;
+    outline: none;
+    font-size: 16px;
+}
+/*实现鼠标滑过，有闪光*/
+.imgBag{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.imgBag:before {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 100%;
+    top: 0;
+    left: -150px;
+    overflow: hidden;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0)0, rgba(255, 255, 255, .2)50%, rgba(255, 255, 255, 0)100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, .2)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0)0, rgba(255, 255, 255, .2)50%, rgba(255, 255, 255, 0)100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0)0, rgba(255, 255, 255, .2)50%, rgba(255, 255, 255, 0)100%);
+    -webkit-transform: skewX(-25deg);
+    -moz-transform: skewX(-25deg)
+}
+.imgBag:hover:before {
+    left: 150%;
+    transition: left 1s ease 0s;
+}

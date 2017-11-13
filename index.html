@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!--lang="zh-CN"指定当前网页所有的自然语言，zh简体中文，cn中国 为浏览器翻译提供语言-->
+<head>
+    <meta charset="utf-8">
+    <!--视口定义-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--指定ie浏览器兼容性指定--仅ie支持此头部 支持最新的  运用webkit内核进行渲染-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>莱美化妆品响应式作品展示silver</title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-ui-1.10.3.min.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.fn.fullpage({
+                slidesColor: ['#000', '#000', '#000', '#000','#000','#000'],
+		        anchors: ['page1', 'page2', 'page3', 'page4','page5','page6'],
+                navigation: true,
+                afterLoad: function (anchorLink,index) {
+                    if(index==3){
+                        $("p.Intr").fadeToggle(3000,"linear");
+                    }
+                }
+            })
+        });
+    </script>
+</head>
+<body>
+<!--导航条包含容器-->
+<div class="navbar navbar-inverse  navbar-fixed-top">
+    <!--容器包裹-->
+    <div class="container">
+        <!--导航条头部加汉堡包-->
+        <div class="nav navbar-header">
+            <a href="#page1" class="navbar-brand">
+                <img src="img/logo_03.png" alt="" class="img-responsive" style="width:100%"/>
+            </a>
+            <a href="#menu" class="navbar-toggle navbar-icon" data-toggle="collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </a>
+        </div>
+        <!--第二部分，导航条折叠部分-->
+        <div class="collapse navbar-collapse" id="menu">
+            <!--左侧导航菜单-->
+            <ul class="nav navbar-nav">
+                <li><a href="#page1" class="active">产品介绍</a></li>
+                <li><a href="#page2">上新动态</a></li>
+                <li><a href="#page3">优惠活动</a></li>
+                <li><a href="#page4">关于我们</a></li>
+                <li><a href="#page5">联系我们</a></li>
+                <li><a href="#page6">售后服务</a></li>
+            </ul>
+
+            <!--右侧导航菜单-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="">登录</a></li>
+                <li><a href="">注册</a></li>
+                <li><a href="" class="glyphicon glyphicon-shopping-cart"></a></li>
+            </ul>
+            <!--右侧文本-->
+            <span class="navbar-text" style="position: relative;right:-378px;font-size:16px;">|</span>
+        </div>
+    </div>
+</div>
+<!--页面1 产品展示-->
+<div class="section section1 img-responsive">
+        <!-- 三个横排 一个横线-->
+    <div class="container maskContainer">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-0  col-xs-6 col-xs-offset-3">
+                <div class="product imgIntr01 row">
+                    <div class="intr col-xs-6 col-xs-offset-3">
+                        <a href="#page1">产品介绍</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-6  col-xs-6 col-xs-offset-3">
+                <div class="product imgIntr02 row">
+                    <div class="intr col-xs-6 col-xs-offset-3">
+                        <a href="#page2">上新动态</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-0  col-xs-6 col-xs-offset-3">
+                <div class="product imgIntr03 row">
+                    <div class="intr col-xs-6 col-xs-offset-3">
+                        <a href="#page3">优惠活动</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-6  col-xs-6 col-xs-offset-3 hidden-xs">
+                <div class="product imgIntr04 row">
+                    <div class="intr col-xs-6 col-xs-offset-3">
+                        <a href="#page4">关于我们</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-md-offset-0  col-xs-6 col-xs-offset-3 hidden-xs hidden-sm">
+                <div class="product imgIntr05 row">
+                    <div class="intr col-xs-6 col-xs-offset-3">
+                        <a href="#page5">联系我们</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-md-offset-6  col-xs-6 col-xs-offset-3 hidden-xs hidden-sm">
+                <div class="product imgIntr06 row">
+                    <div class="intr col-xs-6 col-xs-offset-3">
+                        <a href="#page6">售后服务</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-11 col-md-offset-0 hidden-xs hidden-sm xianTiao">
+                <ul class="list-inline row">
+                    <li class="col-md-1 col-md-offset-1"><a href="#page3" class="glyphicon glyphicon-bell"></a></li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page4" class="glyphicon glyphicon-heart-empty" style="color: #fff"></a></li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page6" class="glyphicon glyphicon-user"></a></li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page2" class="glyphicon glyphicon-asterisk"></a></li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page5" class="glyphicon glyphicon-phone"></a></li>
+                    <li class="col-md-1 col-md-offset-2">
+                        <a href="#page1" class="glyphicon glyphicon-home homePage" style="color: #000;margin-left: -24px;">
+                            <span style="padding-top: 10px;background-color: #f00"></span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#page2" class="iconNext hidden-xs hidden-sm">
+            <span class="glyphicon glyphicon-menu-down"></span>
+        </a>
+    </div>
+
+</div>
+<!--页面2 上新动态-->
+<div class="section">
+    <div class="container">
+        <div id="ad3" class="carousel" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/product01.png" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="img/product02.png" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="img/product03.png" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="img/product04.png" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="img/product05.png" alt=""/>
+                </div>
+                <div class="item">
+                    <img src="img/product06.png" alt=""/>
+                </div>
+                <!--轮播广告固定内容-->
+                <a data-slide="prev" class="carousel-control left" href="#ad3"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a  data-slide="next" class="carousel-control right" href="#ad3"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-11 col-md-offset-0 hidden-xs xianTiao hidden-sm">
+                <ul class="list-inline row">
+                    <li class="col-md-1 col-md-offset-1"><a href="#page3" class="glyphicon glyphicon-bell"></a></li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page4" class="glyphicon glyphicon-heart-empty" style="color: #fff"></a></li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page6" class="glyphicon glyphicon-user"></a></li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page2" class="glyphicon glyphicon-asterisk homePage"  style="color: #000;margin-left: -24px;">
+                        <span style="padding-top: 10px;background-color: #f00"></span>
+                    </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page5" class="glyphicon glyphicon-phone"></a></li>
+                    <li class="col-md-1 col-md-offset-2">
+                        <a href="#page1" class="glyphicon glyphicon-home">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#page3" class="iconNext hidden-sm hidden-xs">
+            <span class="glyphicon glyphicon-menu-down"></span>
+        </a>
+    </div>
+</div>
+<!--页面3  优惠活动-->
+<div class="section section3">
+    <div class="container">
+        <div id="ad4" class="carousel" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active SecondPage">
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-0 col-xs-5 col-xs-offset-1">
+                            <a href="javascript:;" class="imgBag">
+                                <img src="img/pronew_03.png" class="img-responsive"/>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 col-xs-5">
+                            <a href="javascript:;" class="IntrParent imgBag">
+                                <img src="img/pronew_04.png" class="img-responsive"/>
+                                <p href="javascript:;" class="Intr">油田福利定妆粉 一秒变清爽</p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm">
+                            <a href="javascript:;" class="IntrParent imgBag">
+                                <img src="img/pronew_05.png" alt="" class="img-responsive"/>
+                                <p href="javascript:;" class="Intr">超浓密3D睫毛膏 卷翘、纤长、浓密 即刻拥有</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-0 col-xs-5 col-xs-offset-1">
+                            <a href="javascript:;" class="IntrParent imgBag">
+                                <img src="img/pronew_06.png" alt="" class="img-responsive" />
+                                <p href="javascript:;" class="Intr">真爱·奇迹香水 遇见最好的他</p>
+
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 col-xs-5">
+                            <p href="javascript:;" class="IntrParent imgBag">
+                                <img src="img/pronew_07.png" alt="" class="img-responsive"/>
+                                <p class="Intr">完美意境妆前乳 遮瑕、清透、亮肤 完美底妆</p>
+                            </a>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 hidden-xs hidden-sm" >
+                            <a href="javascript:;" class="IntrParent imgBag">
+                                <img src="img/pronew_08.png"  class="img-responsive"/>
+                                <p href="javascript:;" class="Intr">少女心渐变腮红 打造粉嫩少女妆容</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--轮播广告固定内容-->
+                <a data-slide="prev" class="carousel-control left" href="#ad4"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a  data-slide="next" class="carousel-control right" href="#ad4"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-11 col-md-offset-0 hidden-xs  hidden-sm xianTiao">
+                <ul class="list-inline row">
+                    <li class="col-md-1 col-md-offset-1">
+                        <a href="#page3" class="glyphicon glyphicon-bell  homePage" style="color: #000;margin-left: -24px;">
+                            <span style="padding-top: 10px;background-color: #f00"></span>
+                        </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page4" class="glyphicon glyphicon-heart-empty" style="color: #fff"></a></li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page6" class="glyphicon glyphicon-user"></a></li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page2" class="glyphicon glyphicon-asterisk">
+                    </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page5" class="glyphicon glyphicon-phone"></a></li>
+                    <li class="col-md-1 col-md-offset-2">
+                        <a href="#page1" class="glyphicon glyphicon-home">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#page4" class="iconNext hidden-xs hidden-sm">
+            <span class="glyphicon glyphicon-menu-down"></span>
+        </a>
+    </div>
+</div>
+<!--页面4 关于我们-->
+<div class="section section4">
+    <div class="container">
+        <p class="header">关于我们</p>
+        <div class="row">
+            <div class="col-xs-9 col-xs-offset-2">
+                <p class="About">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;莱美1976年诞生于法国，是由Armand  Vivid（阿曼达·薇薇德）创办的品牌。<br/>
+                作为全球知名的高端化妆品品牌，莱美涉足护肤、彩妆、香水等多个产品领域，主要面向教育程度、<br/>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;收入水平较高，年龄在25～40岁的成熟女性 。
+                </p>
+                <p class="About">
+                    凭借着对香水的天才敏感嗅觉、执着不懈的冒险精神，以及他立志让法国品牌在当时已被美国品牌垄断 <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;的全球化妆品市场占有一席之地的抱负，莱美为世界化妆品历史写下美的一页。<br/>
+                一支来自法国古堡的玫瑰，凭借着气质，在变幻莫测的女性心理间，在捉摸不定的时尚法则中，足足绽 <br/>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 放了四十年。
+                </p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-md-11 col-md-offset-0 hidden-xs hidden-sm xianTiao">
+                <ul class="list-inline row">
+                    <li class="col-md-1 col-md-offset-1">
+                        <a href="#page3" class="glyphicon glyphicon-bell ">
+
+                        </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2">
+                     <a href="#page4" class="glyphicon glyphicon-heart-empty  homePage"  style="color: #000;margin-left: -24px;">
+                    </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page6" class="glyphicon glyphicon-user"></a></li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page2" class="glyphicon glyphicon-asterisk">
+                    </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2">
+                        <a href="#page5" class="glyphicon glyphicon-phone"></a></li>
+                    <li class="col-md-1 col-md-offset-2">
+                        <a href="#page1" class="glyphicon glyphicon-home">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#page5" class="iconNext hidden-sm hidden-xs">
+            <span class="glyphicon glyphicon-menu-down"></span>
+        </a>
+    </div>
+</div>
+<!--页面5 联系我们-->
+<div class="section section1">
+    <div class="container maskContainer">
+        <div class="row connactHeader">
+            <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+                <table></table>
+                <div class="connactHead">
+                    <h2>CONTACT&nbsp;&nbsp;US</h2>
+                    <p>联系客服</p>
+                </div>
+            </div>
+            <div class="col-md-2 col-md-offset-2 conact col-xs-4 col-xs-offset-2 col-sm-2 col-sm-offset-2">
+                <img src="img/connect01.png" alt="联系电话"/>
+                <p>联系电话</p>
+                <p>0571-98765432</p>
+            </div>
+            <div class="col-md-2  conact col-xs-4 col-sm-2">
+                <img src="img/connect02.png" alt="联系地址"/>
+                <p>联系地址 <br/> 浙江省杭州市莫山桥南路1868号</p>
+            </div>
+            <div class="col-sm-2 col-sm-offset-0 col-md-2 conact col-md-offset-0  col-xs-4 col-xs-offset-2">
+                <img src="img/connect03.png" alt="E-mail"/>
+                <p>E-mail <br/> boss@mail.com</p>
+            </div>
+            <div class="col-md-2 conact col-xs-4 col-sm-2 ">
+                <img src="img/connect04.png" alt="网址"/>
+                <p>网址 <br/> www.jiabiao.com</p>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-md-11 col-md-offset-0 hidden-xs hidden-sm xianTiao">
+                <ul class="list-inline row">
+                    <li class="col-md-1 col-md-offset-1">
+                        <a href="#page3" class="glyphicon glyphicon-bell ">
+                        </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2">
+                        <a href="#page4" class="glyphicon glyphicon-heart-empty" >
+                        </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page6" class="glyphicon glyphicon-user"></a></li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page2" class="glyphicon glyphicon-asterisk">
+                    </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2">
+                        <a href="#page5" class="glyphicon glyphicon-phone  homePage"  style="color: #000;margin-left: -24px;">
+
+                        </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2">
+                        <a href="#page1" class="glyphicon glyphicon-home">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#page6" class="iconNext hidden-xs hidden-sm">
+            <span class="glyphicon glyphicon-menu-down"></span>
+        </a>
+    </div>
+</div>
+<!--页面6 售后服务-->
+<div class="section section1">
+    <div class="container maskContainer">
+        <div class="row connactHeader">
+            <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+                <table></table>
+                <div class="messageHead">
+                    <h2>MESSAGE</h2>
+                    <p>售后留言</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-2 messageLeft col-xs-8 col-xs-offset-3">
+                <div class="row">
+                    <input type="text" placeholder="姓名"/>
+                </div>
+               <div class="row messageInput">
+                   <input type="text" placeholder="邮箱"/>
+               </div>
+                <div class="row messageInput">
+                    <input type="text" placeholder="电话"/>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-0 messageRight col-xs-8 col-xs-offset-3">
+                <textarea   rows="8" placeholder="留言信息"></textarea>
+            </div>
+            <div class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
+                <table></table>
+                <div class="connactHead">
+                 <button>提交留言</button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 40px;">
+            <div class="col-md-11 col-md-offset-0 hidden-xs  hidden-sm xianTiao">
+                <ul class="list-inline row">
+                    <li class="col-md-1 col-md-offset-1">
+                        <a href="#page3" class="glyphicon glyphicon-bell ">
+                        </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2">
+                        <a href="#page4" class="glyphicon glyphicon-heart-empty" >
+                        </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2">
+                        <a href="#page6" class="glyphicon glyphicon-user  homePage"   style="color: #000;margin-left: -24px;">
+                        </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2"><a href="#page2" class="glyphicon glyphicon-asterisk">
+                    </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2">
+                        <a href="#page5" class="glyphicon glyphicon-phone">
+
+                        </a>
+                    </li>
+                    <li class="col-md-1 col-md-offset-2">
+                        <a href="#page1" class="glyphicon glyphicon-home">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="#page1" class="iconNext hidden-xs  hidden-sm">
+            <span class="glyphicon glyphicon-menu-down"></span>
+        </a>
+    </div>
+</div>
+</body>
+</html>
